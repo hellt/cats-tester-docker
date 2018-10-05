@@ -5,7 +5,7 @@ VSPK_VERSION="$2"
 
 [[ -z "$VSPK_VERSION" ]] && { VSPK_VERSION=$NUAGE_VERSION; }
 
-CATS_DEP_PACKAGES="future jinja2 py2-ipaddress pyvmomi PyYAML robotframework robotframework-sshlibrary tabulate vspk==$VSPK_VERSION"
+CATS_DEP_PACKAGES="future jinja2 python-cinderclient python-glanceclient python-novaclient python-keystoneclient python-neutronclient openstacksdk py2-ipaddress pyvmomi PyYAML robotframework robotframework-sshlibrary tabulate vspk==$VSPK_VERSION"
 
 git checkout -b $NUAGE_VERSION
 
