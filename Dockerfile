@@ -6,6 +6,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lin
     pip install --upgrade pip setuptools && \
     pip install -U six certifi && \
     pip install \
+        elasticsearch-dsl==5.4.0 \
         future  \
         jinja2  \
         python-cinderclient \
