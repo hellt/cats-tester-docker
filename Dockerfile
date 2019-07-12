@@ -24,7 +24,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         python-qpid-proton \
         tabulate \
         https://github.com/krissterckx/nuage-openstack-neutron/releases/download/release-5.3.3-queens/nuage_openstack_neutronclient-6.5.0.5.3.3_99_nuage-py2-none-any.whl \
-        vspk==5.4.1 && \
+        vspk==6.0.1 && \
     rm -r /root/.cache
 
-ENV NUAGE_RELEASE 5.4.1
+ENV NUAGE_RELEASE 6.0.1
