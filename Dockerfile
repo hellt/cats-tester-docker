@@ -1,4 +1,4 @@
-FROM alpine:3.9
+FROM alpine:3.10.2
 
 RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev openssl-dev libffi-dev  && \
     python3 -m ensurepip && \
