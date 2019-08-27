@@ -20,6 +20,8 @@ RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev open
         pyvmomi \
         python-qpid-proton \
         tabulate \
+        stcrestclient \
+        textfsm \
         vspk==6.0.1 && \
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
