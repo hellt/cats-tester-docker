@@ -22,8 +22,8 @@ RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev open
         tabulate \
         stcrestclient \
         textfsm \
-        vspk==6.0.1 && \
+        vspk==6.0.2 && \
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
 
-ENV NUAGE_RELEASE 6.0.1
+ENV NUAGE_RELEASE 6.0.2
