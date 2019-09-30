@@ -15,13 +15,14 @@ RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev open
         elasticsearch-dsl==5.4.0\
         cryptography==2.4.2\
         future  \
-        openshift\
+        openshift==0.8.9\
         openstacksdk \
         pyvmomi \
         python-qpid-proton \
         tabulate \
         stcrestclient \
         textfsm \
+        netmiko \
         vspk==6.0.2 && \
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
