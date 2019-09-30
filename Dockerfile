@@ -10,12 +10,8 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         cryptography==2.4.2\
         future  \
         jinja2  \
-        python-cinderclient \
-        python-glanceclient \
-        python-novaclient \
-        python-keystoneclient \
-        python-neutronclient \
-        openshift openstacksdk \
+        openshift==0.8.9 \
+        openstacksdk \
         py2-ipaddress \
         pyvmomi \
         PyYAML \
@@ -23,7 +19,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         robotframework-sshlibrary \
         python-qpid-proton \
         tabulate \
-        https://github.com/krissterckx/nuage-openstack-neutron/releases/download/release-5.3.3-queens/nuage_openstack_neutronclient-6.5.0.5.3.3_99_nuage-py2-none-any.whl \
+        netmiko \
         vspk==6.0.2 && \
     rm -r /root/.cache
 
