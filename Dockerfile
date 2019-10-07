@@ -20,6 +20,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         python-qpid-proton \
         tabulate \
         netmiko \
+        coloredlogs \
         vspk==6.0.2 && \
     rm -r /root/.cache
 
