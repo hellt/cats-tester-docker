@@ -21,7 +21,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         tabulate \
         netmiko \
         coloredlogs \
-        vspk==6.0.2 && \
+        vspk==6.0.3 && \
     rm -r /root/.cache
 
-ENV NUAGE_RELEASE 6.0.2
+ENV NUAGE_RELEASE 6.0.3
