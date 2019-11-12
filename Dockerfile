@@ -24,8 +24,8 @@ RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev open
         textfsm \
         netmiko \
         coloredlogs \
-        vspk==6.0.2 && \
+        vspk==6.0.3 && \
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
 
-ENV NUAGE_RELEASE 6.0.2
+ENV NUAGE_RELEASE 6.0.3
