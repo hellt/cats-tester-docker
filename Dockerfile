@@ -19,6 +19,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         robotframework-sshlibrary \
         python-qpid-proton \
         tabulate \
+        stcrestclient \
         netmiko \
         coloredlogs \
         vspk==6.0.3 && \
