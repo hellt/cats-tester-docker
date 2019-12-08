@@ -1,6 +1,6 @@
 FROM alpine:3.10.2
 
-RUN apk add --no-cache py3-paramiko py3-lxml build-base python3 python3-dev openssl-dev libffi-dev  && \
+RUN apk add --no-cache py3-paramiko openssh-client sshpass py3-lxml build-base python3 python3-dev openssl-dev libffi-dev  && \
     python3 -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip3 install --upgrade pip setuptools && \
