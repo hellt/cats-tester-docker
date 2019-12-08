@@ -1,6 +1,6 @@
 FROM alpine:3.9
 
-RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev libffi-dev linux-headers && \
+RUN apk add --no-cache python openssh-client sshpass py-paramiko build-base python2-dev openssl-dev libffi-dev linux-headers && \
     python -m ensurepip && \
     rm -r /usr/lib/python*/ensurepip && \
     pip install --upgrade pip setuptools && \
@@ -18,8 +18,8 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         robotframework \
         robotframework-sshlibrary \
         python-qpid-proton \
-        tabulate \
         stcrestclient \
+        tabulate \
         netmiko \
         coloredlogs \
         vspk==6.0.3 && \
