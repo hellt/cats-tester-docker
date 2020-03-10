@@ -18,7 +18,7 @@ RUN apk add --no-cache python py-paramiko build-base python2-dev openssl-dev lib
         openshift openstacksdk \
         py2-ipaddress \
         pyvmomi \
-        paramiko=2.6 \
+        paramiko==2.6 \
         netmiko==2.4.2 \
         PyYAML \
         robotframework \
