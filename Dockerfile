@@ -28,4 +28,4 @@ RUN apk add --no-cache py3-paramiko openssh-client sshpass py3-lxml build-base p
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
 
-ENV NUAGE_RELEASE 5.4.1
+ENV NUAGE_RELEASE 6.0.5
