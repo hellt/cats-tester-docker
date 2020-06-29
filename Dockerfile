@@ -24,7 +24,7 @@ RUN apk add --no-cache py3-paramiko openssh-client sshpass py3-lxml build-base p
         textfsm \
         netmiko \
         coloredlogs \
-        vspk && \
+        'vspk>=5,<6' && \
     rm -r /root/.cache && \
     ln -s /usr/bin/python3 /usr/bin/python
 
